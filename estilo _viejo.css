@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-filtros,
+.form-abm {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.checkboxes label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+    color: #555;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+button[type="button"] {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .form-filtros,
+    .form-abm {
+        padding: 30px;
+    }
+
+    input[type="text"],
+    select {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}

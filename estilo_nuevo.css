@@ -1,0 +1,323 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+}
+
+
+p {
+    margin-top: 40px;
+}
+
+
+.form-datos {
+    width: 95%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 97%;
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+#eliminar {
+    background-color: #9b3333;
+    position: relative;
+}
+
+
+#botonesFormAbm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#botonesIzquierda {
+    display: flex;
+    gap: 10px;
+}
+
+
+    button {
+        font-size: 1.1rem;
+    }
+
+
+button:hover {
+    background-color: #357ab8;
+}
+
+
+/* Estilo de la tabla */
+.contenedorTabla {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+
+th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+    color: #333;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* Estilo de los botones en la tabla */
+td button {
+    background-color: #007bff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+td button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilo de los checkboxes */
+#checkboxContainer {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+
+#checkboxContainer label {
+    display: flex;
+    align-items: center;
+}
+
+
+#checkboxContainer input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Estilo del spinner */
+.spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.spinner-icon {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+
+
+    100% { transform: rotate(360deg); }
+
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.form-filtros,
+.form-abm {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+}
+
+
+input[type="text"],
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+
+.checkboxes label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+td {
+    background-color: #fff;
+    color: #555;
+}
+
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+
+.form-actions {
+    margin-top: 20px;
+}
+
+
+button[type="button"] {
+    margin-right: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .form-filtros,
+    .form-abm {
+        padding: 30px;
+    }
+
+
+    input[type="text"],
+    select {
+        width: calc(100% - 20px);
+    }
+}
